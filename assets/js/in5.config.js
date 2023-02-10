@@ -1,4 +1,3 @@
-
 var useBookmark = false;
 var limitWebAppToDevice = (location.search.toLowerCase().indexOf('webapp=0')<0);
 var vertCenterFlipbooks = true;
@@ -10,7 +9,7 @@ var resetMSOs = true;
 var autoPlay = -1;
 var useSmoothSwipeOnImageSequences = true;
 var bookmarkName = 'in5_bookmark_' + location.href.substr(location.host.length);
-var touchEnabled = 'ontouchstart' in document.documentElement;
+var touchEnabled = '' in document.documentElement;
 var pointerEnabled = 'onpointerdown' in document.documentElement;
 var clickEv = (touchEnabled) ? 'vclick' : 'click';
 if (!window.getComputedStyle) {
