@@ -5,6 +5,7 @@
 <title>iographicsform</title>
 <meta name="apple-mobile-web-app-title" content="MyApplication">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Permission-Policy" content="interest-cohort=()">
 <meta name="viewport" content="width=1125,minimum-scale=.2">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript">window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
@@ -28,17 +29,24 @@
       <img src="assets/images/blank.gif" alt="Rectangle" style="left:284px !important;top:2017px !important;" id="item15883" class="pageItem " data-src="assets/images/item_15883.png"/>
       <form action="https://formsubmit.co/779370ca9dcf4ae75ce0ed66f7b13e7c" method="POST" id="form" enctype="multipart/form-data" class="form">
         
+        <!-- Honeypot -->
+        <input type="text" name="honey" style="display: none;">
+
+        <!-- Disable Captcha -->
+        <input type="hidden" name="_captcha" value="false">
+
+
         <input type="hidden" name="_next" value="https://iographics.github.io/form/success.html">
 
         <div class="fields" id="fields" inputmode="fields">
            <input type="text" required="text" data-id="18242" aria-label="Comapny" placeholder="Company" name="Comapny" id="item18242" class="pageItem form"/>
-           <input type="text" required="Name" value="" data-id="18245" aria-label="Name" name="Full&nbsp;Name" placeholder="Full name" id="item18245" class="pageItem form"/>
+           <input type="text" required="Name" value="" data-id="18245" aria-label="Name" name="Name" placeholder="Full name" id="item18245" class="pageItem form"/>
            <input required="email" type="email" value="" data-id="email" aria-label="email" name="email" placeholder="email" id="email" class="pageItem form"/>
            <input type="tel" required="number" value="" data-id="18248" aria-label="Phone" name="Phone" placeholder="Phone" id="item18248" class="pageItem form"/>
            <input type="text" required="text" value="" data-id="118249" aria-label="Address" name="Address" placeholder="Address" id="item118249" class="pageItem form"/>
            <input type="text" required="text" value="" data-id="1118249" aria-label="Description" name="Description" placeholder="Description" id="item1118249" class="pageItem form"/>
-           <input type="date" required="date" value="" data-id="18249" aria-label="Date" name="Date" placeholder="Date" id="item18249" class="pageItem form"/>
           </div>
+          <input type="date" required="date" value="" data-id="18249" aria-label="Date" name="Date" placeholder="Date" id="item18249" class="pageItem form"/>
          <select required="required" data-id="18251" alt="design" name="Design" id="item18251"  class="pageItem">
           <option value="Logo-design">Logo design</option>
           <option value="Poster-design">Poster design</option>
