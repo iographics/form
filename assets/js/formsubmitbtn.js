@@ -5,7 +5,7 @@ const formButton = document.querySelector("#submit");
 formButton.disabled = true; 
 
 // alternative is to use "change" - explained below
-formInput.addEventListener("keyup", buttonState);
+formInput.addEventListener("touchend", buttonState);
 
 function buttonState() {
     if (document.querySelector('#item1118249','#item18249','#item118249','#item18245','#email','#item18248','#item18242').value === "") {
@@ -20,7 +20,7 @@ formButton.addEventListener("click", () => {
 console.log("  ", document.querySelector('#item1118249','#item18249','#item118249','#item18245','#email','#item18248','#item18242').value);
 })
 
-formInput.addEventListener("keyup", (e) => {
+formInput.addEventListener("touchend", (e) => {
     const value = e.currentTarget.value;
     formButton.disabled = false;
 
